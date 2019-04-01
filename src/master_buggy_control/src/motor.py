@@ -20,7 +20,7 @@ def read_number():
 
 def rpm(data):
     rospy.loginfo(rospy.get_caller_id() + ' RPM = %d', data.data)
-    array = list() # Creates a list (I think)
+    array = list()  # Creates a list (I think)
     array.append(1)
     array.append((data.data >> 8) & 0xFF)
     array.append(data.data & 0xFF)
